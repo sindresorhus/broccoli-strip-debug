@@ -1,0 +1,47 @@
+{
+  "name": "broccoli-strip-debug",
+  "version": "0.1.0",
+  "description": "Strip console and debugger statements from JavaScript code",
+  "license": "MIT",
+  "repository": "sindresorhus/broccoli-strip-debug",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "broccoli build temp && mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "broccoli-plugin",
+    "strip",
+    "remove",
+    "delete",
+    "clean",
+    "debug",
+    "debugger",
+    "console",
+    "log",
+    "logging",
+    "js",
+    "javascript",
+    "ecmascript",
+    "ast",
+    "esprima"
+  ],
+  "dependencies": {
+    "broccoli-filter": "^0.0.1",
+    "strip-debug": "^0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "broccoli": "^0.2.0",
+    "rimraf": "^2.2.6"
+  }
+}
