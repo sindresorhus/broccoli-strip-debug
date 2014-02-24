@@ -2,13 +2,12 @@
 var Filter = require('broccoli-filter');
 var stripDebug = require('strip-debug');
 
-function StripDebugFilter(inputTree, options) {
+function StripDebugFilter(inputTree) {
 	if (!(this instanceof StripDebugFilter)) {
-		return new StripDebugFilter(inputTree, options);
+		return new StripDebugFilter(inputTree);
 	}
 
 	this.inputTree = inputTree;
-	this.options = options || {};
 }
 
 StripDebugFilter.prototype = Object.create(Filter.prototype);

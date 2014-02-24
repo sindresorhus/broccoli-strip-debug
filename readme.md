@@ -14,7 +14,7 @@ npm install --save broccoli-strip-debug
 
 ```js
 var stripDebug = require('broccoli-strip-debug');
-tree = stripDebug(tree, options);
+tree = stripDebug(tree);
 ```
 
 
