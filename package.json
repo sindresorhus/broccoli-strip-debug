@@ -1,6 +1,6 @@
 {
   "name": "broccoli-strip-debug",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "Strip console and debugger statements from JavaScript code",
   "license": "MIT",
   "repository": "sindresorhus/broccoli-strip-debug",
