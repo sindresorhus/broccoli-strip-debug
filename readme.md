@@ -10,7 +10,7 @@ $ npm install --save broccoli-strip-debug
 ```
 
 
-## Example
+## Usage
 
 ```js
 var stripDebug = require('broccoli-strip-debug');
