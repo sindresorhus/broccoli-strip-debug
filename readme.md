@@ -5,8 +5,8 @@
 
 ## Install
 
-```sh
-$ npm install --save broccoli-strip-debug
+```
+$ npm install --save-dev broccoli-strip-debug
 ```
 
 
