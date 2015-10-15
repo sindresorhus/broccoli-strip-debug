@@ -7,6 +7,8 @@ function StripDebugFilter(inputTree) {
 		return new StripDebugFilter(inputTree);
 	}
 
+	Filter.call(this, inputTree);
+
 	this.inputTree = inputTree;
 }
 
