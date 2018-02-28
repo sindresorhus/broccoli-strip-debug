@@ -1,14 +1,13 @@
-'use strict';
-var assert = require('assert');
-var fs = require('fs');
-var rimraf = require('rimraf');
+import fs from 'fs';
+import test from 'ava';
+import del from 'del';
 
-afterEach(function () {
-	rimraf.sync('temp');
+test.afterEach(() => {
+	del.sync('temp');
 });
 
-it('should strip debug statements', function () {
-	assert.equal(
+test('strips debug statements', t => {
+	t.is(
 		fs.readFileSync('temp/fixture.js', 'utf8'),
 		fs.readFileSync('fixture/expected.js', 'utf8')
 	);

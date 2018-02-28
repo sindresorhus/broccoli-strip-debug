@@ -13,11 +13,11 @@ $ npm install --save-dev broccoli-strip-debug
 ## Usage
 
 ```js
-var stripDebug = require('broccoli-strip-debug');
-tree = stripDebug(tree);
+const StripDebug = require('broccoli-strip-debug');
+tree = new StripDebug(tree);
 ```
 
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)

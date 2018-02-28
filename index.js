@@ -1,25 +1,22 @@
 'use strict';
-var Filter = require('broccoli-filter');
-var stripDebug = require('strip-debug');
+const Filter = require('broccoli-filter');
+const stripDebug = require('strip-debug');
 
-function StripDebugFilter(inputTree) {
-	if (!(this instanceof StripDebugFilter)) {
-		return new StripDebugFilter(inputTree);
+module.exports = class extends Filter {
+	constructor(inputTree) {
+		super(inputTree);
+		this.inputTree = inputTree;
 	}
 
-	Filter.call(this, inputTree);
+	get extensions() {
+		return ['js'];
+	}
 
-	this.inputTree = inputTree;
-}
+	get targetExtension() {
+		return 'js';
+	}
 
-StripDebugFilter.prototype = Object.create(Filter.prototype);
-StripDebugFilter.prototype.constructor = StripDebugFilter;
-
-StripDebugFilter.prototype.extensions = ['js'];
-StripDebugFilter.prototype.targetExtension = 'js';
-
-StripDebugFilter.prototype.processString = function (str) {
-	return stripDebug(str);
+	processString(text) {
+		return stripDebug(text);
+	}
 };
-
-module.exports = StripDebugFilter;
