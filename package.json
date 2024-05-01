@@ -4,11 +4,13 @@
 	"description": "Strip console and debugger statements from JavaScript code",
 	"license": "MIT",
 	"repository": "sindresorhus/broccoli-strip-debug",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
+	"sideEffects": false,
 	"engines": {
 		"node": ">=6"
 	},
